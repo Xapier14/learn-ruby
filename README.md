@@ -27,13 +27,36 @@ My journey to learning Ruby the hard way.
 
 I am following the "Learn Ruby The Hard Way" guide/book.
 
+## My Notes
+ - Ruby is dynamically typed.
+ - Comments are parts of lines that start with `#`.
+ - String Interpolation is done via:
+    ```ruby
+    a_substring = "Hello"
+    another_substring = "world"
+    a_string = "#{a_substring} #{another_substring}!"
+    ```
+    Where `a_string` is `"Hello world!"`.
+ - Some recommended naming conventions are:
+    - `snake_case` for symbols, methods, and variables.
+    - `CapitalCase / PascalCase` for classes and modules.
+    - `snake_case` again for files and directories.
+    - `SCREAMING_SNAKE_CASE` for constants.
+    - Predicate methods should have their names end with `?`.
+        - Example: `def even?(value)...`
+    - Do not prefix predicate method names with `is_`, `can_`, `does_`, etc...
+    - Prefix unused variables with `_`.
+
+## Goals
+Complete the "Study Drills" as much as I can.
+
 ## Progress
  - [x] Exercise 0: The Setup
  - [x] Exercise 1: A Good First Program
  - [x] Exercise 2: Comments And Pound Characters
  - [x] Exercise 3: Numbers And Math
- - [ ] Exercise 4: Variables And Names
- - [ ] Exercise 5: More Variables And Printing
+ - [x] Exercise 4: Variables And Names
+ - [x] Exercise 5: More Variables And Printing
  - [ ] Exercise 6: Strings And Text
  - [ ] Exercise 7: More Printing
  - [ ] Exercise 8: Printing, Printing
