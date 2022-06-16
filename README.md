@@ -1,9 +1,6 @@
 <h1 align='center'>
     learn-ruby
 </h1>
-<h2 align='center'>
-    Description
-</h2>
 
 My journey to learning Ruby the hard way.
 
