@@ -1,9 +1,22 @@
 <h1 align='center'>
     learn-ruby
 </h1>
+<h2 align='center'>
+    Description
+</h2>
+
+My journey to learning Ruby the hard way.
+
+I am following the "Learn Ruby The Hard Way" guide/book.
+I might do my own stuff with file handling and networking.
+
+<h2 align='center'>
+    Resources
+</h2>
+
 <p align='center'>
     <b>
-        Resources
+        BOOK/GUIDE: Learn Ruby The Hard Way
     </b>
     <br>
     <a href="https://learnrubythehardway.org/book/">
@@ -22,10 +35,6 @@
         Barnes & Noble
     </a>
 </p>
-
-My journey to learning Ruby the hard way.
-
-I am following the "Learn Ruby The Hard Way" guide/book.
 
 ## My Notes
 
