@@ -28,6 +28,7 @@ My journey to learning Ruby the hard way.
 I am following the "Learn Ruby The Hard Way" guide/book.
 
 ## My Notes
+
  - Ruby is dynamically typed.
  - Comments are parts of lines that start with `#`.
  - String Interpolation is done via:
@@ -37,6 +38,55 @@ I am following the "Learn Ruby The Hard Way" guide/book.
     a_string = "#{a_substring} #{another_substring}!"
     ```
     Where `a_string` is `"Hello world!"`.
+ - String Formatting:
+    ```ruby
+    time = 5
+    message = "Processing of the data has finished in %d seconds" % [time]
+    puts message
+    ```
+    **Output:** `"Processing of the data has finished in 5 seconds"`
+    - `%d` is a format specifier. ([List of format specifiers](https://alvinalexander.com/programming/printf-format-cheat-sheet/))
+ - Another way of doing (IMO, better way of) String Formatting:
+    ```ruby
+    formatter = "My name is %{name}. I am %{age} years old."
+    puts formatter % {name: "Lance", age: 20}
+    ```
+    **Output:** `"My name is Lance. I am 20 years old."`
+ - Multi-line? strings:
+    - Via concatenation (same as str1 + str2 + str3):
+    ```ruby
+    my_string = "this is"\
+                "a multi-line"\
+                "string."
+    ```
+    - Via `%` (Includes newlines. Yes, even the one after `%{`)
+    ```ruby
+    my_string = %{
+    this is
+    a multi-line
+    string.
+    }
+    ```
+    - Via `"""` (Functions the same as `%`)
+    ```ruby
+    my_string = """
+    this is
+    a multi-line
+    string.
+    """
+    ```
+ - `%` notation:
+    - `%Q[]` and `%[]` - interpolated string.
+        ```ruby
+        puts %Q[#{'hi'} Ram!]
+        ```
+        **Output:** `"hi Ram!"`
+    - `%q[]` - non-interpolated string
+        ```ruby
+        puts %q[#{'hi'} Ram!]
+        ```
+        **Output:** `"#{'hi'} Ram!"`
+    - See: [Ruby Programming - The % Notation](https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Literals#The_.25_Notation)
  - Some recommended naming conventions are:
     - `snake_case` for symbols, methods, and variables.
     - `CapitalCase / PascalCase` for classes and modules.
@@ -48,19 +98,21 @@ I am following the "Learn Ruby The Hard Way" guide/book.
     - Prefix unused variables with `_`.
 
 ## Goals
+
 Complete the "Study Drills" as much as I can.
 
 ## Progress
+
  - [x] Exercise 0: The Setup
  - [x] Exercise 1: A Good First Program
  - [x] Exercise 2: Comments And Pound Characters
  - [x] Exercise 3: Numbers And Math
  - [x] Exercise 4: Variables And Names
  - [x] Exercise 5: More Variables And Printing
- - [ ] Exercise 6: Strings And Text
- - [ ] Exercise 7: More Printing
- - [ ] Exercise 8: Printing, Printing
- - [ ] Exercise 9: Printing, Printing, Printing
+ - [x] Exercise 6: Strings And Text
+ - [x] Exercise 7: More Printing
+ - [x] Exercise 8: Printing, Printing
+ - [x] Exercise 9: Printing, Printing, Printing
  - [ ] Exercise 10: What Was That?
  - [ ] Exercise 11: Asking Questions
  - [ ] Exercise 12: Prompting People
