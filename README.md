@@ -93,6 +93,22 @@ I might do my own stuff with file handling and networking.
         ```
         **Output:** `"#{'hi'} Ram!"`
     - See: [Ruby Programming - The % Notation](https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Literals#The_.25_Notation)
+ - Getting input can be done via the `gets` method.
+    ```ruby
+    my_name = $stdin.gets.chomp
+    puts "Hi #{my_name}!"
+    ```
+    **Note:**
+
+    The `chomp` method removes the end line (\n) at the end of the string returned by `gets`. It is method that can be called with strings.
+ - Converting data types:
+    - `to_i` converts to integer.
+    - `to_s` converts to string.
+    - `to_f` converts to floating point number.
+    - `to_r` converts to a rational.
+    - `to_c` converts to a complex.
+ - You can get argument variables via `ARGV`. This returns an array.
+ - Arrays can contain objects of different data types.
  - Some recommended naming conventions are:
     - `snake_case` for symbols, methods, and variables.
     - `CapitalCase / PascalCase` for classes and modules.
@@ -102,7 +118,6 @@ I might do my own stuff with file handling and networking.
         - Example: `def even?(value)...`
     - Do not prefix predicate method names with `is_`, `can_`, `does_`, etc...
     - Prefix unused variables with `_`.
-
 ## Goals
 
 Complete the "Study Drills" as much as I can.
@@ -119,12 +134,12 @@ Complete the "Study Drills" as much as I can.
  - [x] Exercise 7: More Printing
  - [x] Exercise 8: Printing, Printing
  - [x] Exercise 9: Printing, Printing, Printing
- - [ ] Exercise 10: What Was That?
- - [ ] Exercise 11: Asking Questions
- - [ ] Exercise 12: Prompting People
- - [ ] Exercise 13: Parameters, Unpacking, Variables
- - [ ] Exercise 14: Prompting And Passing
- - [ ] Exercise 15: Reading Files
+ - [x] Exercise 10: What Was That?
+ - [x] Exercise 11: Asking Questions
+ - [x] Exercise 12: Prompting People
+ - [x] Exercise 13: Parameters, Unpacking, Variables
+ - [x] Exercise 14: Prompting And Passing
+ - [x] Exercise 15: Reading Files
  - [ ] Exercise 16: Reading And Writing Files
  - [ ] Exercise 17: More Files
  - [ ] Exercise 18: Names, Variables, Code, Functions
