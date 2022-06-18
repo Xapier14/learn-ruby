@@ -109,6 +109,20 @@ I might do my own stuff with file handling and networking.
     - `to_c` converts to a complex.
  - You can get argument variables via `ARGV`. This returns an array.
  - Arrays can contain objects of different data types.
+ - You can call functions with just their name?
+    ```ruby
+    puts "Hello World!"
+    # is equal to
+    puts("Hello World!")
+    ```
+    ```ruby
+    def test()
+        puts("Hey!")
+    end
+    test()
+    # is equal to
+    test
+    ```
  - Some recommended naming conventions are:
     - `snake_case` for symbols, methods, and variables.
     - `CapitalCase / PascalCase` for classes and modules.
@@ -140,11 +154,11 @@ Complete the "Study Drills" as much as I can.
  - [x] Exercise 13: Parameters, Unpacking, Variables
  - [x] Exercise 14: Prompting And Passing
  - [x] Exercise 15: Reading Files
- - [ ] Exercise 16: Reading And Writing Files
- - [ ] Exercise 17: More Files
- - [ ] Exercise 18: Names, Variables, Code, Functions
- - [ ] Exercise 19: Functions And Variables
- - [ ] Exercise 20: Functions And Files
+ - [x] Exercise 16: Reading And Writing Files
+ - [x] Exercise 17: More Files
+ - [x] Exercise 18: Names, Variables, Code, Functions
+ - [x] Exercise 19: Functions And Variables
+ - [x] Exercise 20: Functions And Files
  - [ ] Exercise 21: Functions Can Return Something
  - [ ] Exercise 22: What Do You Know So Far?
  - [ ] Exercise 23: Read Some Code
